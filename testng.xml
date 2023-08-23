@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="com.omayo.utility.Listeners"></listener>
+	</listeners>
+
+	<test thread-count="5" name="smoke">
+
+
+		<groups>
+			<run>
+				<include name="smoke" />
+			</run>
+		</groups>
+
+
+		<classes>
+			<class name="com.omayo.centerpagetest.LoginTest" />
+			<class name="com.omayo.rightpagetest.AlertDemoTest" />
+			<class name="com.omayo.rightpagetest.HiddenButtonTest" />
+			<class name="com.omayo.centerpagetest.TableTest" />
+
+
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->
